@@ -13,4 +13,11 @@ const {app, BrowserWindow} = electron;
 
 app.on('ready',() => {
  console.log('App is now ready');
+//   new BrowserWindow({});
+win = new BrowserWindow({ width: 800, height: 600 });
+/**
+ * Both of the following ways are correct for loading index.html
+ */
+win.loadURL(`file://${__dirname}/index.html`);
+// win.loadFile('index.html');
 });
