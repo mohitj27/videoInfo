@@ -16,6 +16,8 @@
         <button type="submit">Get info</button>
     </form>
        <script>
+           const electron = require('electron');
+           const { ipcRenderer } = electron;
            document.querySelector('form').addEventListener('submit', (event) =>{
                event.preventDefault();
             //    debugger
